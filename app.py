@@ -35,7 +35,7 @@
 
 #     openai_mm_llm = OpenAIMultiModal(
 #         model="gpt-4-vision-preview",
-#         api_key="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",
+#         api_key="sk-",
 #         max_new_tokens=3000
 #     )
 
@@ -81,7 +81,7 @@
 
 # def get_chatbot_response(image_file, document_file, user_prompt, prompt_template):
 #     try:
-#         os.environ["OPENAI_API_KEY"] = "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"
+#         os.environ["OPENAI_API_KEY"] = "sk-"
 #         openai.api_key = os.environ["OPENAI_API_KEY"]
 #         # Read image file
 #         img = Image.open(BytesIO(image_file.file.read()))
@@ -109,7 +109,7 @@
 #         # Generate response using OpenAIMultiModal
 #         openai_mm_llm = OpenAIMultiModal(
 #             model="gpt-4-vision-preview",
-#             api_key="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",
+#             api_key="sk-",
 #             max_new_tokens=3000
 #         )
 
@@ -175,7 +175,7 @@
 # #     # Chatbot response logic using the user-provided prompt
 # #     openai_chatbot_llm = OpenAIMultiModal(
 # #         model="gpt-4-vision-preview",
-# #         api_key="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",  # Replace with your chatbot API key
+# #         api_key="sk-",  # Replace with your chatbot API key
 # #         max_new_tokens=3000
 # #     )
 
@@ -249,7 +249,7 @@
 
 #     openai_mm_llm = OpenAIMultiModal(
 #         model="gpt-4-vision-preview",
-#         api_key="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",
+#         api_key="sk-",
 #         max_new_tokens=3000
 #     )
 
@@ -330,7 +330,7 @@
 #     try:
 #         data_directory = os.path.abspath(os.path.join(os.getcwd(), "data"))
 #         downloaded_file_path = download_pdf(document_url, data_directory)
-#         os.environ["OPENAI_API_KEY"] = "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"
+#         os.environ["OPENAI_API_KEY"] = "sk-"
 #         openai.api_key = os.environ["OPENAI_API_KEY"]
 #         # max_new_tokens=3000
 
@@ -369,7 +369,7 @@
 #         # Generate response using OpenAIMultiModal
 #         openai_mm_llm = OpenAIMultiModal(
 #             model="gpt-4-vision-preview",
-#             api_key="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",
+#             api_key="sk-",
 #             max_new_tokens=3000
 #         )
 
@@ -457,7 +457,7 @@ def generate_summary(image_file):
 
     openai_mm_llm = OpenAIMultiModal(
         model="gpt-4-vision-preview",
-        api_key="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",
+        api_key="sk-",
         max_new_tokens=3000
     )
     img_directory = os.path.abspath(os.path.join(os.getcwd(), "data/Imagefile"))
@@ -518,7 +518,7 @@ def get_chatbot_response(image_file, user_prompt, prompt_template, document_file
         img_directory = os.path.abspath(os.path.join(os.getcwd(), "data/Imagefile"))
         downloaded_file_path_image = download_pdf(image_file, img_directory)
 
-        os.environ["OPENAI_API_KEY"] = "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"
+        os.environ["OPENAI_API_KEY"] = "sk-"
         openai.api_key = os.environ["OPENAI_API_KEY"]
 
         imageUrl = downloaded_file_path_image
@@ -542,7 +542,7 @@ def get_chatbot_response(image_file, user_prompt, prompt_template, document_file
         # Generate response using OpenAIMultiModal
         openai_mm_llm = OpenAIMultiModal(
             model="gpt-4-vision-preview",
-            api_key="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",
+            api_key="sk-
             max_new_tokens=3000
         )
 
